@@ -1,0 +1,220 @@
+@import "tailwindcss";
+/*@import "tw-animate-css";*/
+/*@import "shadcn/tailwind.css";*/
+/*@import "@fontsource-variable/inter";*/
+/*---break---*/
+@custom-variant dark (&:is(.dark *));
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  /*font-family: var(--default-font-family);*/
+  /*margin: 0;*/
+  /*padding: 0;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  /*background-color: red;*/
+}
+
+.wrapper {
+}
+
+.container {
+}
+
+.header {
+}
+
+.main {
+  padding: 20px;
+  padding-bottom: 120px;
+  margin-bottom: 30px;
+  /*background-color: #F9FAFB;*/
+}
+
+/*.mybutton {*/
+/*  width: 120px;*/
+/*  padding-top: 8px;*/
+/*  padding-bottom: 8px;*/
+/*  margin-left: 16px;*/
+/*  !*background-color: #0259A9;*!*/
+/*  !*background-color: #155DFC;*!*/
+/*  background-color: #50A2FF;*/
+/*  color: white;*/
+/*  text-align: center;*/
+/*  justify-content: center;*/
+/*  border-radius: 10px;*/
+/*  cursor: pointer;*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*}*/
+
+/*.mybutton:hover {*/
+/*  background-color: #2B7FFF;*/
+/*  !*background-color: #0259A9;*!*/
+/*  !*background-color: #8EC7F5;*!*/
+/*  !*background-color: #155DFC;*!*/
+/*  !*color: black;*!*/
+/*}*/
+
+/*block font-medium mb-1 items-start "*/
+
+.label1 {
+  margin-bottom: 4px;
+}
+
+/*className={`px-4 py-2 border border-slate-200 rounded-lg ease shadow-sm w-full*/
+/*focus:ring-1 focus:outline-none focus:border-slate-400 focus:shadow-md*/
+/*hover:ring-1 hover:border-slate-400*/
+/*outline-none transition-all*/
+/*${errors.username && touched.usernamename ? 'input-error' : null}*/
+
+.fieldnormal {
+  width: 100%;
+  padding: 4px;
+  /*outline: none;*/
+  border-width: 2px;
+  border-color: #D1D5DC;
+  border-radius: 6px;
+  box-shadow: 2px 2px #f3f4f6;
+  margin-bottom: 2px;
+}
+
+.fieldnormal:focus,
+.fieldnormal:hover
+{
+  outline: none;
+  border-color: #2B7FFF;
+  box-shadow: 2px 2px #50A2FF;
+}
+
+.buttonsave {
+  width: 120px;
+  background-color: #50A2FF;
+  box-shadow: 2px 2px #50A2FF;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 8px;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  display: flex;
+}
+
+.buttonsave:hover {
+  background-color: #2B7FFF;
+}
+
+.title1 {
+  /*padding: 5px 3px 5px 3px;*/
+  justify-content: center;
+  text-align: center;
+  color: #212B36;
+  font-weight: bold;
+  border-color: #E5E7EB;
+  border-width: 0;
+  padding : 9px;
+  /*!*{!*<th className="title1 py-3 px-3 text-[#212B36] justify-center items-center font-bold whites*/
+  border-bottom-width: 3px;
+  white-space: nowrap;
+}
+
+
+.cell1 {
+  padding: 5px 3px 5px 3px;
+  border-color: #E5E7EB;
+  /*border-color: red;*/
+  border-width: 0;
+  /*border-top-width: 1px;*/
+  border-bottom-width: 1px;
+  white-space: nowrap;
+}
+
+.span1 {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+.footer {
+  height: 110px;
+  bottom: 0;
+  width: 100%;
+}
+
+.tabs {
+  padding: 0px;
+  padding-bottom: 10px;
+  /*border-bottom: 1px solid navy;*/
+  margin-bottom: 10px;
+}
+
+.tabmain {
+  /*border: #5e63ff 2px solid;*/
+  padding: 10px 0 10px 0px;
+}
+
+.tooltip {
+  position: relative;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  /*background-color: dimgrey;*/
+  background-color: #F0FDF4;
+  /*background-color: gre;*/
+  color: #000;
+  text-align: center;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 10pt;
+  font-weight: normal;
+
+  position: absolute;
+  z-index: 1;
+
+  top: -25px;
+  right: 50%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.rotatelooping {
+  transform: rotate(0deg);
+  animation: rotate 1000ms infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+h1 {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
